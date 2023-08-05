@@ -8,92 +8,60 @@
 
 
 /*----------------Index--------------*/
-header {
-    /*background-color: rgba(43, 153, 226, 0.596);*/
-    background-color: black;
-    padding: 30px; 
+
+.home_header {
+    min-height: 100vh;
+    max-height: 100%;
+    background-image: url(../assets/images/tylerhomeheader.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
 }
 
-body{
-    background-color: rgba(43, 153, 226, 0.596);
-}
 
-.nav-link {
-    color: rgb(216, 238, 21);
-     text-decoration: none;
-     font-family: 'Roboto';
-     font-weight: bold;
+
+.home_header_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 30px;
     
 }
-nav ul {
-    text-align: right;
-}
-nav ul li {
-    display: inline;
-    padding: 15px;
+
+.home_header_content h1 {
+    color: white;
+    font-size: 40px;
 }
 
-
-main {
-    background-color: rgba(43, 153, 226, 0.596);
-}
-.cajitamain {
-    padding: 30px;
-    text-align: center;
-
-}
-.cajitamain h1 {
-    color: blue;
-    font-family: 'Roboto';
-    font-size: 60px;
-    padding: 20px;
-}
-.cajitamain p {
-    color: purple;
-    font-family: 'Roboto';
-    font-size: 35px;
-    padding: 20px;
+.home_header_content p {
+    color: white;
+    font-size: 40px;
 }
 
+.cta {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
 
-
-.cards {
-    background-color: aquamarine;
-    padding: 30px;
-}
-.cards h2 {
-    color: blue;
-    font-family: 'Roboto';
-    font-size: 45px;
-}
-.cardbody img {
-    height: 500px;
-    width: 500px;
-}
-.cardbody {
-    background-color: blanchedalmond;
-    display: inline-block;
-    padding: 15px;
-    border: solid;
-
-}
-.cardbody h3 {
-    color: green;
-    font-family: 'Roboto';
+.cta a {
+    text-decoration: none;
+    color: white;
+    background-color: #1f53c5;
+    padding: 10px;
     font-size: 20px;
+    border: solid 1px #1f53c5;
 }
 
-.boton {
-
-    position: fixed;
-    bottom: 80px;
-    right: 40px;
+.cta a:hover {
+    background-color: transparent;
+    color: white;
 }
-.boton a img {
-height: 50px;
-width: 50px;
 
-}
 
 
 

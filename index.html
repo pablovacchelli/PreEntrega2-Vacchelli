@@ -6,69 +6,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 <body>
-    <header>
+    <header class="home_header">
+        <nav class="navbar navbar-expand-md" data-bs-theme: "dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Ty</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/historia.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/Discografia.html" class="nav-link">Discography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/galeria.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/contacto.html" class="nav-link">Contact</a>
+                    </li>
 
-<nav>
-    
-<ul>
-    <li><a href="index.html" class="nav-link">Home</a></li>
-    <li><a href="pages/historia.html" class="nav-link">About</a></li>
-    <li><a href="pages/Discografia.html" class="nav-link">Discography</a></li>
-    <li><a href="pages/galeria.html" class="nav-link">Gallery</a></li>
-    <li><a href="pages/contacto.html" class="nav-link">Contact</a></li>
-</ul>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
 
-</nav>
+          <section class="home_header_content">
+            <h1>Tyler, the creator</h1>
+            <p>
+                Get the latest updates on Tyler, enjoy the gallery and learn facts you didn't know before. You can also send us pictures and info to update this fan page on the contact section!
+            </p>
+          </section>
+          <section class="cta">
+            <a href="pages/contacto.html">Contact us</a>
+          </section>
+
+
+
+
+
     </header>
-    <main>
 
 
-<section class="cajitamain">
-    <h1>CALL ME IF YOU GET LOST OUT NOW!</h1>
-    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/mAg8UyDt_sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mdt4bsdUMdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum exercitationem perferendis aperiam illum distinctio, labore incidunt autem dolorum ducimus!</P>
-</section>
-
-<section class="cards">
-    <h2>TOUR DATES</h2>
-    <article class="cardbody">
-    <img src="assets/images/subway.jpg" alt="sub">
-    <h3>BUENOS AIRES 20/7
-        MOVISTAR ARENA
-    </h3>
-    </article>
-    <article class="cardbody">
-        <img src="assets/images/imagen2.jpg" alt="ye">
-        <h3>BILBAO 25/7
-            CENTRO CULTURAL BILBAO
-        </h3>
-    </article>
-</section>
-<div class="boton">
-    
-    <a 
-    href="https://www.instagram.com/feliciathegoat/?hl=es" target="_blank">
-    <img src="assets/images/iglogoblack.jpg" alt="iglogoblack">
-
-    </a>
-</div>
-</main>
-
-    </main>
-    <footer>
-    <div class="footer-link">
-        <h4>
-            Pablo Emanuel Vacchelli
-        </h4>
-    </div>
 
 
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
 

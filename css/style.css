@@ -12,7 +12,7 @@
 .home_header {
     min-height: 100vh;
     max-height: 100%;
-    background-image: url(../assets/images/backgroundimg.jpg);
+    background-image: url(../assets/images/tylerhomeheader.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -20,16 +20,12 @@
     flex-direction: column;
 
 } 
-
-@media screen and (max-width:600px) {
-    .home_header_content h1 {
-        font-size: 20px;
-    }
-    .home_header_content p {
-        font-size: 15px;
-    }
-    
+.nav-link-home {
+    color: white;
+    text-decoration: none;
+    padding: 10px
 }
+
 
 
 
@@ -138,6 +134,20 @@ h2, h3 {
     gap: 10px;
     transition: 0.5s;
 }
+@media screen and (max-width: 768px) {
+    .discocards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .discocards-body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 
 .disco1{
     grid-area: parte1;
@@ -210,11 +220,10 @@ h2, h3 {
     
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 768px) {
     .grilla {
-
-
-        grid-template-areas: none;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -321,6 +330,17 @@ h2, h3 {
     padding: 30px;
     gap: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .cardbox {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    
+}
+
 
 .cardbox {
 

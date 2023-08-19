@@ -1,0 +1,357 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/*----------------Index--------------*/
+
+.home_header {
+    min-height: 100vh;
+    max-height: 100%;
+    background-image: url(../assets/images/Tyler-the-Creator.webp);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    @include flex-column;
+    img {
+        object-fit: cover;
+    }
+
+
+}
+
+
+.main_home {
+    background-color: #24303c;
+}
+
+.main_home_cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+h1, h3 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 25px;
+}
+
+
+
+
+
+
+.slide img {
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------Discografia----------*/
+
+.discocards{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    'parte1 parte2'
+    'parte3 parte4'
+    'parte5 parte6'
+    ;
+    gap: 10px;
+    transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+    .discocards {
+    @include flex-column;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .discocards-body {
+        @include flex-column;
+    }
+    
+}
+
+.disco1{
+    grid-area: parte1;
+}
+.disco2{
+    grid-area: parte2;
+}
+.disco3{
+    grid-area: parte3;
+}
+.disco4{
+    grid-area: parte4;
+
+}
+.disco5{
+    grid-area: parte5;
+}
+.disco6{
+    grid-area: parte6;
+}
+
+
+
+.discocards-body{
+    background-color:#24303c;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px 0 black;
+    img {
+        height: 300px;
+        width: 300px;
+    }
+    h2 {
+        color: white;
+        font-family: 'Roboto';
+        font-size: 20px;
+        padding: 10px;
+    
+    }
+    p {
+        color: white;
+        padding: 10px;
+        font-family: 'Roboto';
+    
+    }
+    &:hover {
+        background-color: #1f53c5;
+
+    }
+}
+
+
+
+
+
+/*------------Galeria----------*/
+.grilla{
+    min-height: 100vh;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+
+    grid-template-areas: 
+    'area1 area1 area2 area2'
+    'area1 area1 area4 area4'
+    'area3 area3 area4 area4'
+    ;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .grilla {
+    @include flex-column;
+    }
+}
+
+.caja{
+    width: 100%;
+    height: 100%;
+    @include flex-column-center;
+    align-items: center;
+    
+    box-shadow: 5px 5px 5px 0 black;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+    
+    }
+}
+ 
+
+
+.c1{
+
+    grid-area: area1;
+
+}
+.c2{
+
+    grid-area: area2;
+
+}
+.c3{
+
+    grid-area: area3;
+
+}
+.c4{
+
+    grid-area: area4;
+}
+
+/*-------------------Contacto-------------------*/
+.formulario-contacto {
+    @include flex-column-center;
+    align-items: center;
+    
+
+    width: 400px;
+    background-color: #24303c;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    color: white;
+    box-shadow: 5px 5px 5px 0 black;
+    h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+
+
+
+.renglones{
+    width: 100%;
+    background-color: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+
+
+.boton-contacto {
+    width: 100%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+
+
+}
+
+
+
+/*-------------About------------------*/
+
+
+.aboutcard {
+
+    @include flex-column-center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .cardbox {
+        @include flex-column;
+    
+    }
+
+    
+}
+
+
+.cardbox {
+
+    background-color:#24303c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px 0 black;
+    img {
+
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    &:hover {
+        background-color: #1f53c5;
+
+    }
+    &:hover img {
+        width: 60%;
+    }
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+}
+
+
+
+
+
+
+
+.box__content {
+
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+footer {
+    background-color: black;
+    padding: 30px;
+}
+
+.footer-link {
+    color: white;
+     text-decoration: none;
+     font-family: 'Roboto';
+}
+.footer-link h4 {
+    text-align: right;
+    font-size: 30px;
+}

@@ -219,12 +219,7 @@ h1, h3 {
   gap: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .cardbox {
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 .cardbox {
   background-color: #24303c;
   display: flex;
@@ -246,8 +241,15 @@ h1, h3 {
 .cardbox:hover img {
   width: 60%;
 }
-.cardbox:nth-child(2n) {
+.boxes:nth-child(2n) {
   flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+  .cardbox {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .box__content {

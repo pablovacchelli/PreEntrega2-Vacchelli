@@ -96,18 +96,8 @@ h1, h3 {
     gap: 10px;
     transition: 0.5s;
 }
-@media screen and (max-width: 768px) {
-    .discocards {
-    @include flex-column;
-    }
-    
-}
-@media screen and (max-width: 768px) {
-    .discocards-body {
-        @include flex-column;
-    }
-    
-}
+
+
 
 .disco1{
     grid-area: parte1;
@@ -160,7 +150,18 @@ h1, h3 {
 
     }
 }
-
+@media screen and (max-width: 768px) {
+    .discocards {
+    @include flex-column;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .discocards-body {
+        @include flex-column;
+    }
+    
+}
 
 
 
@@ -183,11 +184,7 @@ h1, h3 {
     
 }
 
-@media screen and (max-width: 768px) {
-    .grilla {
-    @include flex-column;
-    }
-}
+
 
 .caja{
     width: 100%;
@@ -225,6 +222,11 @@ h1, h3 {
 .c4{
 
     grid-area: area4;
+}
+@media screen and (max-width: 768px) {
+    .grilla {
+    @include flex-column;
+    }
 }
 
 /*-------------------Contacto-------------------*/
@@ -338,7 +340,6 @@ h1, h3 {
     
     }
 
-    
 }
 
 

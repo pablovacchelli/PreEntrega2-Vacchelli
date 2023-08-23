@@ -81,7 +81,7 @@ $box-shadow: 5px 5px 5px 0 black;
     object-fit: cover;
 }
 
-h1, h3 {
+h1, h2 {
     font-family: $titlefont;
     color: $titlecolor;
     font-size: 40px;
@@ -306,6 +306,12 @@ h1, h3 {
     color: $titlecolor;
     margin: 16px 0;
     font-size: 16px;
+    transition: 0.5s;
+    &:hover{
+        background-color: darken($color: black, $amount: 10%)
+    
+
+    }
 
 
 }

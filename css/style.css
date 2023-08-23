@@ -62,7 +62,7 @@
   object-fit: cover;
 }
 
-h1, h3 {
+h1, h2 {
   font-family: normal "Roboto";
   color: white;
   font-size: 40px;
@@ -241,6 +241,10 @@ h1, h3 {
   color: white;
   margin: 16px 0;
   font-size: 16px;
+  transition: 0.5s;
+}
+.boton-contacto:hover {
+  background-color: black;
 }
 
 /*-------------About------------------*/

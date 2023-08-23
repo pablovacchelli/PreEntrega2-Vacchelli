@@ -9,7 +9,7 @@
 .home_header {
   min-height: 100vh;
   max-height: 100%;
-  background-image: url(../assets/images/Tyler-the-Creator.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.295)), url(../assets/images/Tyler-the-Creator.webp);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -20,17 +20,50 @@
   object-fit: cover;
 }
 
+.home_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+}
+.home_content h1 {
+  color: white;
+  font-family: normal "Roboto";
+  font-size: 40px;
+  text-align: center;
+}
+.home_content p {
+  color: white;
+  font-family: normal "Roboto";
+  font-size: 30px;
+  text-align: center;
+}
+
 .main_home {
   background-color: #24303c;
 }
 
-.main_home_cards {
-  display: flex;
+.row {
   justify-content: space-around;
-  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 5px 5px 5px 0 black;
+}
+
+.card-img-top {
+  width: 100%;
+  object-fit: cover;
 }
 
 h1, h3 {
+  font-family: normal "Roboto";
   color: white;
   font-size: 40px;
   text-align: center;
@@ -53,18 +86,6 @@ h1, h3 {
   transition: 0.5s;
 }
 
-@media screen and (max-width: 768px) {
-  .discocards {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 768px) {
-  .discocards-body {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .disco1 {
   grid-area: parte1;
 }
@@ -103,7 +124,7 @@ h1, h3 {
 }
 .discocards-body h2 {
   color: white;
-  font-family: "Roboto";
+  font-family: normal "Roboto";
   font-size: 20px;
   padding: 10px;
 }
@@ -116,6 +137,19 @@ h1, h3 {
   background-color: #1f53c5;
 }
 
+@media screen and (max-width: 768px) {
+  .discocards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .discocards-body {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*------------Galeria----------*/
 .grilla {
   min-height: 100vh;
@@ -128,12 +162,6 @@ h1, h3 {
   padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .grilla {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .caja {
   width: 100%;
   height: 100%;
@@ -166,6 +194,12 @@ h1, h3 {
   grid-area: area4;
 }
 
+@media screen and (max-width: 768px) {
+  .grilla {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*-------------------Contacto-------------------*/
 .formulario-contacto {
   display: flex;
@@ -179,7 +213,7 @@ h1, h3 {
   margin-bottom: 50px;
   padding: 30px;
   border-radius: 5px;
-  font-family: "Roboto";
+  font-family: normal "Roboto";
   color: white;
   box-shadow: 5px 5px 5px 0 black;
 }
@@ -195,7 +229,7 @@ h1, h3 {
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
-  font-family: "Roboto";
+  font-family: normal "Roboto";
   font-size: 18px;
 }
 
@@ -219,7 +253,6 @@ h1, h3 {
   gap: 10px;
 }
 
-
 .cardbox {
   background-color: #24303c;
   display: flex;
@@ -241,9 +274,6 @@ h1, h3 {
 .cardbox:hover img {
   width: 60%;
 }
-.boxes:nth-child(2n) {
-  flex-direction: row-reverse;
-}
 
 @media screen and (max-width: 768px) {
   .cardbox {
@@ -251,10 +281,9 @@ h1, h3 {
     flex-direction: column;
   }
 }
-
 .box__content {
   color: white;
-  font-family: "Roboto";
+  font-family: normal "Roboto";
   font-size: 20px;
   padding: 10px;
 }
@@ -264,13 +293,9 @@ footer {
   padding: 30px;
 }
 
-.footer-link {
-  color: white;
-  text-decoration: none;
-  font-family: "Roboto";
-}
-
 .footer-link h4 {
+  color: white;
+  font-family: normal "Roboto";
   text-align: right;
   font-size: 30px;
 }

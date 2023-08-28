@@ -1,0 +1,61 @@
+.aboutcard {
+
+    @include flex-column-center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+
+}
+
+
+
+
+.cardbox {
+
+    background-color:#24303c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+    box-shadow: $box-shadow;
+    img {
+
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    &:hover {
+        background-color: #1f53c5;
+
+    }
+    &:hover img {
+        width: 60%;
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .cardbox {
+        @include flex-column;
+    
+    
+    }
+
+}
+
+
+.box__content {
+
+    color: $titlecolor;
+    font-family: $titlefont;
+    font-size: 20px;
+    padding: 10px;
+}

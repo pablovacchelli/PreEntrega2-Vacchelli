@@ -1,0 +1,79 @@
+.discocards{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    'parte1 parte2'
+    'parte3 parte4'
+    'parte5 parte6'
+    ;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+
+
+.disco1{
+    grid-area: parte1;
+}
+.disco2{
+    grid-area: parte2;
+}
+.disco3{
+    grid-area: parte3;
+}
+.disco4{
+    grid-area: parte4;
+
+}
+.disco5{
+    grid-area: parte5;
+}
+.disco6{
+    grid-area: parte6;
+}
+
+
+
+.discocards-body{
+    background-color:#24303c;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: $box-shadow;
+    img {
+        height: 300px;
+        width: 300px;
+    }
+    h2 {
+        color: $titlecolor;
+        font-family: $titlefont;
+        font-size: 20px;
+        padding: 10px;
+    
+    }
+    p {
+        color: $titlecolor;
+        padding: 10px;
+        font-family: 'Roboto';
+    
+    }
+    &:hover {
+        background-color: #1f53c5;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .discocards {
+    @include flex-column-center;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .discocards-body {
+        @include flex-column;
+    }
+    
+}

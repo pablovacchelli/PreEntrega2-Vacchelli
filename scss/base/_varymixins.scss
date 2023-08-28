@@ -1,0 +1,15 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+$titlefont: normal  'Roboto';
+
+$titlecolor: white;
+
+$box-shadow: 5px 5px 5px 0 black;

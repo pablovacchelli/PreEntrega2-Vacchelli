@@ -3,15 +3,16 @@
     max-height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(6, 400px);
 
     grid-template-areas: 
     'area1 area1 area2 area2'
     'area1 area1 area4 area4'
     'area3 area3 area4 area4'
-    'area5 area6 area7 area8'
-    'area5 area6 area7 area8'
-    'area5 area6 area7 area8'
+    'area5 area5 area6 area6'
+    'area5 area5 area8 area8'
+    'area7 area7 area8 area8'
+    
     ;
     gap: 10px;
     padding: 10px;
@@ -25,6 +26,7 @@
     height: 100%;
     @include flex-column-center;
     align-items: center;
+    transition: 0.5s;
     
     box-shadow: $box-shadow;
     img{
@@ -34,6 +36,7 @@
         transition: 0.5s;
     
     }
+
 }
 
 

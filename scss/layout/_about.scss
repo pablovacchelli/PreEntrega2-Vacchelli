@@ -56,6 +56,14 @@
 
 }
 
+@media screen and (max-width: 768px) {
+    .boxes:nth-child(2n) {
+    
+        flex-direction: column;
+    }
+    
+}
+
 
 .box__content {
 
